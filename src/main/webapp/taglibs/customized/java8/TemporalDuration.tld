@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<!DOCTYPE taglib PUBLIC "-//Sun Microsystems, Inc.//DTD JSP Tag Library 1.1//EN"
+" http://java.sun.com/j2ee/dtds/web-jsptaglibrary_1_1.dtd">
+
+<taglib>
+     <tlibversion>1.0</tlibversion>
+     <jspversion>1.1</jspversion>
+     <shortname>duration</shortname>
+     <info>by RaitonBL</info>
+
+     <tag>
+          <name>parse</name>
+          <tagclass>com.raitonbl.taglib.java8.TemporalDuration</tagclass>           
+          <bodycontent>empty</bodycontent>
+          <info>Formata java8 LocalDateTime</info>   
+    	  <attribute>
+       		<name>begin</name>
+       		<required>true</required>
+       		<rtexprvalue>true</rtexprvalue>
+       		<type>java.time.LocalDateTime;</type>
+    	  </attribute>  
+          <attribute>
+       		<name>end</name>
+       		<required>true</required>
+       		<rtexprvalue>true</rtexprvalue>
+       		<type>java.time.LocalDateTime;</type>
+    	  </attribute>     
+    </tag>
+</taglib>
+
